@@ -7,7 +7,7 @@
 	</parent>
 	<artifactId>lib-gwt-svg-edu</artifactId>
 	<packaging>war</packaging>
-	<version>0.3.13-SNAPSHOT</version>
+	<version>0.3.13</version>
 	<name>lib-gwt-svg-edu</name>
 	<description>Provides a navigation menu for a set of educational games for kindergarten children, based on lib-gwt-svg.</description>
 	<url>http://www.vectomatic.org/mvn-sites/lib-gwt-svg-edu</url>
