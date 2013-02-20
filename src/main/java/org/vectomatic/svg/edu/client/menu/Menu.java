@@ -23,8 +23,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.vectomatic.dom.svg.OMSVGDocument;
 import org.vectomatic.dom.svg.OMSVGTSpanElement;
+import org.vectomatic.dom.svg.OMText;
 import org.vectomatic.dom.svg.ui.SVGButtonBase.SVGFace;
 import org.vectomatic.dom.svg.ui.SVGButtonBase.SVGFaceName;
 import org.vectomatic.dom.svg.ui.SVGButtonBase.SVGStyleChange;
@@ -32,7 +32,6 @@ import org.vectomatic.dom.svg.ui.SVGImage;
 import org.vectomatic.dom.svg.ui.SVGPushButton;
 import org.vectomatic.dom.svg.ui.SVGResource;
 import org.vectomatic.dom.svg.utils.DOMHelper;
-import org.vectomatic.dom.svg.utils.OMSVGParser;
 import org.vectomatic.dom.svg.utils.SVGPrefixResolver;
 import org.vectomatic.svg.edu.client.commons.CommonBundle;
 import org.vectomatic.svg.edu.client.commons.CommonConstants;
@@ -222,7 +221,6 @@ public class Menu implements EntryPoint {
 				SVGResource gameLogo,
 				String gameTitle,
 				final RunAsyncCallback callback) {
-			OMSVGDocument document = OMSVGParser.currentDocument();
 			final SVGImage svgImage = new SVGImage(gameLogo);
 			svgImage.addClickHandler(new ClickHandler() {
 
@@ -240,7 +238,7 @@ public class Menu implements EntryPoint {
 				tspans.add(iterator.next());
 			}
 			for (OMSVGTSpanElement tspan : tspans) {
-				tspan.appendChild(document.createTextNode(gameTitle));
+				tspan.appendChild(new OMText(gameTitle));
 			}
 			return svgImage;
 		}
