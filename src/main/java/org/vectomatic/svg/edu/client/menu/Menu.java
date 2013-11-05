@@ -248,7 +248,7 @@ public class Menu implements EntryPoint {
 			faces.put(SVGFaceName.UP, new SVGFace(new SVGStyleChange[] { new SVGStyleChange( new String[] { CommonBundle.INSTANCE.css().navigationUp()} )}));
 			faces.put(SVGFaceName.UP_HOVERING, new SVGFace(new SVGStyleChange[] { new SVGStyleChange( new String[] { CommonBundle.INSTANCE.css().navigationUpHovering()} )}));
 			SVGPushButton homeButton = new SVGPushButton(bundle.home().getSvg(), faces);
-			homeButton.setClassNameBaseVal(CommonBundle.INSTANCE.css().navigationPanelMenuButton());
+			homeButton.setClassNameBaseVal(CommonBundle.INSTANCE.mediaQueries().navigationPanelMenuButton());
 			homeButton.addClickHandler(new ClickHandler() {
 				@Override
 				public void onClick(ClickEvent event) {
