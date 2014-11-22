@@ -46,28 +46,28 @@
 		<dependency>
 			<groupId>org.vectomatic</groupId>
 			<artifactId>lib-gwt-svg-edu-dots</artifactId>
-			<version>0.3.17-SNAPSHOT</version>
+			<version>0.3.17</version>
 			<classifier>classes</classifier>
 			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>org.vectomatic</groupId>
 			<artifactId>lib-gwt-svg-edu-maze</artifactId>
-			<version>0.3.17-SNAPSHOT</version>
+			<version>0.3.17</version>
 			<classifier>classes</classifier>
 			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>org.vectomatic</groupId>
 			<artifactId>lib-gwt-svg-edu-push</artifactId>
-			<version>0.3.17-SNAPSHOT</version>
+			<version>0.3.17</version>
 			<classifier>classes</classifier>
 			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>org.vectomatic</groupId>
 			<artifactId>lib-gwt-svg-edu-puzzle</artifactId>
-			<version>0.3.17-SNAPSHOT</version>
+			<version>0.3.17</version>
 			<classifier>classes</classifier>
 			<type>jar</type>
 		</dependency>
